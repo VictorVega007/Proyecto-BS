@@ -21,3 +21,19 @@
 .form-padding {
   padding: 5%;
 }
+
+@media screen and (max-width: 450px) {
+  .img-main {
+    height: 550px;
+  }
+}
+
+/* Estilos para la página de Nosotros*/
+
+#container-us {
+  height: 100vh;
+}
+
+.team-section {
+  padding: 20px 0 20px 0;
+}
