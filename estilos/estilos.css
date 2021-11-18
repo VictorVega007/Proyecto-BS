@@ -37,3 +37,9 @@
 .team-section {
   padding: 20px 0 20px 0;
 }
+
+/* Estilos para la página de Contacto*/
+
+.iframe-size {
+  height: 70vh;
+}
