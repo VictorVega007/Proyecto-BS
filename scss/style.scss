@@ -1,0 +1,15 @@
+$color-titulo: red;
+$big-font: 4rem;
+$btn-background: yellow;
+
+header {
+  background-color: aqua;
+
+  & .title-1 {
+    color: $color-titulo;
+    font-size: $big-font;
+  }
+  & .boton {
+    background-color: $btn-background;
+  }
+}

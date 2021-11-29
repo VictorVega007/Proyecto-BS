@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-bs",
+  "version": "1.0.0",
+  "description": "Este proyecto está basado en el uso del framework [Bootstrap version 5.1.3](https://getbootstrap.com/ \"Bootstrap version 5.1.3\"). Se trata de una página sobre servicios de asistencia legal con una plataforma integrada para el usuario en el cual pueden acceder a consultas programadas virtuales con abogados especialista en temas legales.",
+  "main": "index.js",
+  "scripts": {
+    "compile.sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorVega007/Proyecto-BS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorVega007/Proyecto-BS/issues"
+  },
+  "homepage": "https://github.com/VictorVega007/Proyecto-BS#readme"
+}

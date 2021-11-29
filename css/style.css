@@ -1,0 +1,60 @@
+#img-user {
+  background-image: url("https://lpscdn.linklaters.com/assets/foundation/images/icon-user.png");
+  background-position: top 8px left 0px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  padding-left: 1%;
+}
+
+.sections-margin {
+  padding: 30px 0 30px 0;
+}
+
+.card {
+  margin: 5px;
+}
+
+.card-img-top {
+  padding: 5% 0 0 0;
+}
+
+.form-padding {
+  padding: 5%;
+}
+
+@media screen and (max-width: 450px) {
+  .img-main {
+    height: 550px;
+  }
+}
+
+/* Estilos para la página de Nosotros*/
+
+#container-us {
+  height: 100vh;
+}
+
+.team-section {
+  padding: 20px 0 20px 0;
+}
+
+/* Estilos para la página de Contacto*/
+
+.iframe-size {
+  height: 70vh;
+}
+
+/* Estilos SASS */
+
+header {
+  background-color: aqua;
+}
+header .title-1 {
+  color: red;
+  font-size: 4rem;
+}
+header .boton {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
