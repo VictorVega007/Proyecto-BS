@@ -1,15 +1,50 @@
 $color-titulo: red;
 $big-font: 4rem;
-$btn-background: yellow;
+$btn-size: 250px;
+$btn-height: 68%;
+$mt: 3.5rem;
+$height-img: 100vh;
 
-header {
-  background-color: aqua;
+#container-us {
+  margin-top: $mt;
+  height: $height-img;
+}
 
-  & .title-1 {
-    color: $color-titulo;
-    font-size: $big-font;
-  }
-  & .boton {
-    background-color: $btn-background;
+#img-user {
+  background-image: url("https://lpscdn.linklaters.com/assets/foundation/images/icon-user.png");
+  background-position: top 8px left 0px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  padding-left: 1%;
+}
+
+.sections-margin {
+  padding: 30px 0 30px 0;
+}
+
+.card {
+  margin: 5px;
+}
+
+.card-img-top {
+  padding: 5% 0 0 0;
+}
+
+.form-padding {
+  padding: 5%;
+}
+
+.button {
+  margin-top: 8px;
+  width: $btn-size;
+  height: $btn-height;
+}
+
+@each $abogado in abg1, abg2, abg3 {
+  .#{$abogado}-img {
+    border-radius: 50%;
+    &.#{$abogado}-img:hover {
+      opacity: 0.5;
+    }
   }
 }
