@@ -1,15 +1,16 @@
-$color-titulo: red;
-$big-font: 4rem;
-$btn-size: 250px;
+$btn-size: 240px;
 $btn-height: 68%;
 $mt: 3.5rem;
 $height-img: 100vh;
+$padding-top: 3%;
+$padding-bottom: 3%;
 
 #container-us {
   margin-top: $mt;
   height: $height-img;
 }
 
+/* Estilo para botón de registro en el Navbar */
 #img-user {
   background-image: url("https://lpscdn.linklaters.com/assets/foundation/images/icon-user.png");
   background-position: top 8px left 0px;
@@ -18,10 +19,12 @@ $height-img: 100vh;
   padding-left: 1%;
 }
 
+/* Medidas para las secciones */
 .sections-margin {
   padding: 30px 0 30px 0;
 }
 
+/* Estilos para las cards en página Index*/
 .card {
   margin: 5px;
 }
@@ -34,12 +37,19 @@ $height-img: 100vh;
   padding: 5%;
 }
 
+/*Estilo general para botón en página de Blog*/
 .button {
   margin-top: 8px;
   width: $btn-size;
   height: $btn-height;
 }
 
+/* Tamaño del IFrame página de Contacto*/
+@at-root .iframe-size {
+  height: $height-img;
+}
+
+/* Estilos para la imgs de abogados en página de Nosotros*/
 @each $abogado in abg1, abg2, abg3 {
   .#{$abogado}-img {
     border-radius: 50%;
@@ -47,4 +57,73 @@ $height-img: 100vh;
       opacity: 0.5;
     }
   }
+}
+
+/* Estilos de opacidad en imgs de página Index*/
+$imagen1: bank;
+$imagen2: insurance;
+$imagen3: buro;
+
+.opac__img:hover {
+  @if $imagen1 == bank {
+    opacity: 0.5;
+  } @else if $imagen2 == insurance {
+    opacity: 0.5;
+  } @else if $imagen3 == buro {
+    opacity: 0.5;
+  }
+}
+
+/* Animación de texto en página de Blog */
+.backgrd__tittle b {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  height: 35px;
+  top: 15px;
+  & .backgrd__text {
+    display: inline-block;
+    color: #e9ebea;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -32px;
+  }
+  40% {
+    top: -60px;
+  }
+  60% {
+    top: -90px;
+  }
+  80% {
+    top: -120px;
+  }
+}
+
+/* Estilos para alineación y color de texto en página de contacto */
+.text__align {
+  text-align: justify;
+}
+
+.text__login {
+  @extend.text__align;
+  color: #e9ebea;
+}
+
+/* Spacing de contenedor en página de Nosotros */
+.team-section {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
 }
