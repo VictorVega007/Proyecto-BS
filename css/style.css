@@ -1,9 +1,4 @@
 @charset "UTF-8";
-#container-us {
-  margin-top: 3.5rem;
-  height: 100vh;
-}
-
 /* Estilo para botón de registro en el Navbar */
 #img-user {
   background-image: url("https://lpscdn.linklaters.com/assets/foundation/images/icon-user.png");
@@ -31,18 +26,6 @@
   padding: 5%;
 }
 
-/*Estilo general para botón en página de Blog*/
-.button {
-  margin-top: 8px;
-  width: 240px;
-  height: 68%;
-}
-
-/* Tamaño del IFrame página de Contacto*/
-.iframe-size {
-  height: 100vh;
-}
-
 /* Estilos para la imgs de abogados en página de Nosotros*/
 .abg1-img {
   border-radius: 50%;
@@ -63,6 +46,43 @@
 }
 .abg3-img.abg3-img:hover {
   opacity: 0.5;
+}
+
+/* Spacing de contenedor en página de Nosotros */
+.team-section {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#container-us {
+  margin-top: 3.5rem;
+  height: 100vh;
+}
+
+/* Tamaño para grid de página de Servicios*/
+.grid-p {
+  padding: 0 8% 0 8%;
+}
+
+/*Estilo general para botón en página de Blog*/
+.button {
+  margin-top: 8px;
+  width: 240px;
+  height: 68%;
+}
+
+/* Tamaño del IFrame página de Contacto*/
+.iframe-size {
+  height: 100vh;
+}
+
+/* Estilos para alineación y color de texto en página de contacto */
+.text__align, .text__login {
+  text-align: justify;
+}
+
+.text__login {
+  color: #e9ebea;
 }
 
 /* Estilos de opacidad en imgs de página Index*/
@@ -107,19 +127,27 @@
     top: -120px;
   }
 }
-/* Estilos para alineación y color de texto en página de contacto */
-.text__align, .text__login {
-  text-align: justify;
-}
+/* Media queries*/
+@media (max-width: 770px) {
+  .no-text {
+    display: none;
+  }
 
-.text__login {
-  color: #e9ebea;
-}
+  .row--margin {
+    margin: 8% 0;
+  }
 
-/* Spacing de contenedor en página de Nosotros */
-.team-section {
-  padding-top: 3%;
-  padding-bottom: 3%;
+  .select--width {
+    width: 100%;
+  }
+
+  .iframe-size {
+    height: 60vh;
+  }
+
+  .hidden-text {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

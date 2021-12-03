@@ -1,0 +1,20 @@
+/* Media queries*/
+@media (max-width: $layout-breakpoint-sm) {
+  .no-text {
+    display: none;
+  }
+  .row--margin {
+    margin: $margin-services;
+  }
+  .select--width {
+    width: 100%;
+  }
+
+  .iframe-size {
+    height: 60vh;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+}
