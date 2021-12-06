@@ -17,4 +17,19 @@
   .hidden-text {
     display: none;
   }
+
+  .button--width {
+    width: 10em;
+    height: 10vh;
+  }
+}
+
+@media (max-width: $layout-breakpoint-md) {
+  .no-text {
+    display: none;
+  }
+  .button--width {
+    width: 10em;
+    height: 10vh;
+  }
 }

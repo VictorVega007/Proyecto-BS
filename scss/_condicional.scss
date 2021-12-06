@@ -6,9 +6,12 @@ $imagen3: buro;
 .opac__img:hover {
   @if $imagen1 == bank {
     opacity: 0.5;
+    transition-duration: 0.8s;
   } @else if $imagen2 == insurance {
     opacity: 0.5;
+    transition-duration: 0.8s;
   } @else if $imagen3 == buro {
     opacity: 0.5;
+    transition-duration: 0.8s;
   }
 }

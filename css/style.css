@@ -32,6 +32,7 @@
 }
 .abg1-img.abg1-img:hover {
   opacity: 0.5;
+  transition-duration: 0.8s;
 }
 
 .abg2-img {
@@ -39,6 +40,7 @@
 }
 .abg2-img.abg2-img:hover {
   opacity: 0.5;
+  transition-duration: 0.8s;
 }
 
 .abg3-img {
@@ -46,6 +48,7 @@
 }
 .abg3-img.abg3-img:hover {
   opacity: 0.5;
+  transition-duration: 0.8s;
 }
 
 /* Spacing de contenedor en página de Nosotros */
@@ -77,7 +80,8 @@
 }
 
 /* Estilos para alineación y color de texto en página de contacto */
-.text__align, .text__login {
+.text__align,
+.text__login {
   text-align: justify;
 }
 
@@ -88,9 +92,40 @@
 /* Estilos de opacidad en imgs de página Index*/
 .opac__img:hover {
   opacity: 0.5;
+  transition-duration: 0.8s;
 }
 
-/* Animación de texto en página de Blog */
+/* Animación para botones */
+.button {
+  color: #af1644;
+  background: transparent;
+  border: 1px solid #af1644;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: auto;
+}
+.button.button--over {
+  background-color: white;
+  color: #af1644;
+  border: 1px solid #af1644;
+}
+.button.button--over:hover {
+  background-color: #af1644;
+  color: white;
+}
+.button.button__submit {
+  padding-bottom: 20px;
+}
+.button.button__search {
+  padding: 0 0 0px 0;
+  width: 20rem;
+}
+
+/* Animación para el texto de imagen principal de la página de BLOG*/
 .backgrd__tittle b {
   overflow: hidden;
   position: relative;
@@ -127,6 +162,7 @@
     top: -120px;
   }
 }
+
 /* Media queries*/
 @media (max-width: 770px) {
   .no-text {
@@ -147,6 +183,22 @@
 
   .hidden-text {
     display: none;
+  }
+
+  .button--width {
+    width: 10em;
+    height: 10vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .no-text {
+    display: none;
+  }
+
+  .button--width {
+    width: 10em;
+    height: 10vh;
   }
 }
 

@@ -1,4 +1,38 @@
-/* Animación de texto en página de Blog */
+// Animación de botones
+.button {
+  color: $primary;
+  background: $danger;
+  border: 1px solid $primary;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: auto;
+
+  &.button--over {
+    background-color: white;
+    color: $primary;
+    border: 1px solid $primary;
+  }
+
+  &.button--over:hover {
+    background-color: $primary;
+    color: white;
+  }
+
+  &.button__submit {
+    padding-bottom: 20px;
+  }
+
+  &.button__search {
+    padding: 0 0 0px 0;
+    width: 20rem;
+  }
+}
+
+// Animación de texto en página de Blog
 .backgrd__tittle b {
   overflow: hidden;
   position: relative;
