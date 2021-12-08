@@ -80,13 +80,16 @@
 }
 
 /* Estilos para alineación y color de texto en página de contacto */
-.text__align,
-.text__login {
+.text__align, .text__login {
   text-align: justify;
 }
 
 .text__login {
   color: #e9ebea;
+}
+
+.text__deco {
+  text-decoration: none;
 }
 
 /* Estilos de opacidad en imgs de página Index*/
@@ -95,7 +98,6 @@
   transition-duration: 0.8s;
 }
 
-/* Animación para botones */
 .button {
   color: #af1644;
   background: transparent;
@@ -125,7 +127,6 @@
   width: 20rem;
 }
 
-/* Animación para el texto de imagen principal de la página de BLOG*/
 .backgrd__tittle b {
   overflow: hidden;
   position: relative;
@@ -162,7 +163,6 @@
     top: -120px;
   }
 }
-
 /* Media queries*/
 @media (max-width: 770px) {
   .no-text {
@@ -190,7 +190,6 @@
     height: 10vh;
   }
 }
-
 @media (max-width: 1000px) {
   .no-text {
     display: none;
