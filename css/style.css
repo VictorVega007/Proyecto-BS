@@ -92,6 +92,18 @@
   text-decoration: none;
 }
 
+.page-404 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-border {
+  border-right: solid black 1px;
+}
+
 /* Estilos de opacidad en imgs de página Index*/
 .opac__img:hover {
   opacity: 0.5;
@@ -198,6 +210,10 @@
   .button--width {
     width: 10em;
     height: 10vh;
+  }
+
+  .card-border {
+    border-right: white;
   }
 }
 

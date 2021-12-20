@@ -78,3 +78,16 @@
 .text__deco {
   text-decoration: $text-decoration;
 }
+
+// Estilos para la página de error 404 //
+.page-404 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-border {
+  border-right: solid black 1px;
+}

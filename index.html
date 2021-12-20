@@ -20,6 +20,7 @@
       href="https://img.icons8.com/color/48/000000/l.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header con Navbar-->
@@ -286,6 +287,7 @@
           <div class="col-md-5">
             <video
               src="img/video/video.mp4"
+              data-aos="fade-left"
               class="
                 bd-placeholder-img bd-placeholder-img-lg
                 featurette-image
@@ -325,6 +327,7 @@
           <div class="col-md-5 order-md-1">
             <img
               src="img/lawyer.jpg"
+              data-aos="fade-right"
               class="
                 bd-placeholder-img bd-placeholder-img-lg
                 featurette-image
@@ -353,6 +356,7 @@
           <div class="col-md-5">
             <img
               src="img/podcast.jpg"
+              data-aos="fade-left"
               class="
                 bd-placeholder-img bd-placeholder-img-lg
                 featurette-image
@@ -495,5 +499,9 @@
       </footer>
     </main>
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
